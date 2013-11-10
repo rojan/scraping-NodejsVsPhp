@@ -2,7 +2,6 @@ var start = +new Date();
 var request = require('request');
 var cheerio = require('cheerio');
 var total_page = 200;
-//var total_page = 10;
 var page = 1;
 var header = ['', 'Rank', 'Team', 'Name', 'Point', 'Total'];
 
@@ -24,6 +23,6 @@ while (page <= total_page) {
             var end = +new Date();
             console.log(i +", "+(end-start)/1000);
         }
-    })(page)); //bind everything with i
+    })(page)); //bind everything with page number
     page++;
 }

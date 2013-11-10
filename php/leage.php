@@ -3,7 +3,6 @@ require('phpQuery/phpQuery.php');
 
 $time_start = microtime(true);
 $total_page = 200;
-//$total_page = 10;
 $page = 1;
 $header = array('', 'Rank', 'Team', 'Name', 'Point', 'Total');
 
